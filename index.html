@@ -19,6 +19,7 @@
     :root { color-scheme: light dark; }
     body { font-feature-settings: "ss01" on, "liga" on; }
     /* Subtle, neat card look */
+    .card { min-height: 100%; }
     .card { @apply rounded-2xl border border-slate-200/70 dark:border-slate-700/60 bg-white/80 dark:bg-white/5 shadow-sm backdrop-blur; }
     .chip { @apply inline-flex items-center rounded-full border px-3 py-1 text-sm border-slate-200/80 dark:border-slate-700/60; }
   </style>
@@ -70,8 +71,9 @@
           <a href="assets/IshanRastogi.pdf"
              class="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold shadow-sm">Download CV</a>
           <a href="https://www.linkedin.com/in/rastogiishan" target="_blank" rel="noreferrer"
-             class="inline-flex items-center justify-center rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-2 font-semibold">LinkedIn</a>
-          <a href="mailto:rastogiishan90@gmail.com" class="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold shadow-sm">Email</a>
+             class="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold shadow-sm">LinkedIn</a>
+          <a href="mailto:rastogiishan90@gmail.com" 
+            class="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold shadow-sm">Email</a>
         </div>
       </div>
     </div>
@@ -81,24 +83,63 @@
   <!-- Sections -->
   <main class="max-w-5xl mx-auto px-4 md:px-8">
     <!-- Services / Value -->
-    <section id="services" class="py-12 md:py-16">
-      <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">What I do</h2>
-      <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">I partner with founders and enterprises as a fractional CTO‑level leader and hands‑on engineer. I focus on platform & data architecture, AI enablement, and delivery excellence.</p>
-      <div class="mt-6 grid md:grid-cols-3 gap-4">
-        <div class="card p-5">
-          <h3 class="font-semibold">Interim / Fractional Leadership</h3>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Strategy → execution, org design, hiring, OKRs, delivery governance, DevEx at scale.</p>
-        </div>
-        <div class="card p-5">
-          <h3 class="font-semibold">Platforms, Data & Cloud</h3>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Evented services, data products, BQ/warehouse, contracts, governance, SRE & observability.</p>
-        </div>
-        <div class="card p-5">
-          <h3 class="font-semibold">AI Enablement</h3>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Agentic AI, <span class="whitespace-nowrap">Model Context Protocol (MCP)</span>, RAG pipelines, evaluation, safety, tool integrations.</p>
-        </div>
+    <!-- Services / Value -->
+<section id="services" class="py-12 md:py-16">
+  <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">What I do</h2>
+  <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">
+    Fractional CTO-level leadership + hands-on engineering — platform & data architecture, AI enablement, and delivery excellence.
+  </p>
+
+  <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+    <!-- Card 1 -->
+    <div class="card p-6 relative overflow-hidden flex flex-col md:min-h-[220px]">
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-sky-500/5 via-transparent to-transparent"></div>
+      <div class="flex items-center gap-3">
+        <!-- Icon: Leadership -->
+        <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0 text-sky-600 dark:text-sky-400">
+          <path fill="currentColor" d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5m0 2c-4.42 0-8 2.239-8 5v1h16v-1c0-2.761-3.58-5-8-5"/>
+        </svg>
+        <h3 class="font-semibold">Interim / Fractional Leadership</h3>
       </div>
-    </section>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+        Strategy → execution, org design, hiring, OKRs, delivery governance, DevEx at scale, SRE & observability.
+      </p>
+      <div class="mt-auto pt-4 text-xs text-slate-500">Outcome-first · “Strategy that ships.”</div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card p-6 relative overflow-hidden flex flex-col md:min-h-[220px]">
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-emerald-500/5 via-transparent to-transparent"></div>
+      <div class="flex items-center gap-3">
+        <!-- Icon: Platforms -->
+        <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0 text-emerald-600 dark:text-emerald-400">
+          <path fill="currentColor" d="M3 7h18v2H3zm0 4h12v2H3zm0 4h18v2H3z"/>
+        </svg>
+        <h3 class="font-semibold">Platforms, Data & Cloud</h3>
+      </div>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+        Event-driven services, data products, lake/warehouse, contracts, governance, performance & security by design.
+      </p>
+      <div class="mt-auto pt-4 text-xs text-slate-500">Kotlin · Node · React · GCP/AWS · K8s · Terraform</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card p-6 relative overflow-hidden flex flex-col md:min-h-[220px]">
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-fuchsia-500/5 via-transparent to-transparent"></div>
+      <div class="flex items-center gap-3">
+        <!-- Icon: AI -->
+        <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0 text-fuchsia-600 dark:text-fuchsia-400">
+          <path fill="currentColor" d="M12 2a10 10 0 1 1-7.07 2.93A10 10 0 0 1 12 2m1 5h-2v5h2zm0 6h-2v2h2z"/>
+        </svg>
+        <h3 class="font-semibold">AI Enablement</h3>
+      </div>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+        Agentic AI, <span class="whitespace-nowrap">Model Context Protocol (MCP)</span>, RAG pipelines, tool integrations, evals & safety.
+      </p>
+      <div class="mt-auto pt-4 text-xs text-slate-500">Vertex/Gemini · OpenAI/Claude · HF · Vector DBs</div>
+    </div>
+  </div>
+</section>
 
     <!-- Experience -->
     <section id="experience" class="py-12 md:py-16">
@@ -173,8 +214,8 @@
       </div>
     </section>
 
-    <!-- Skills -->
    <!-- Skills -->
+<!-- Skills -->
 <section id="skills" class="py-12 md:py-16">
   <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Skills & Expertise</h2>
   <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">
@@ -182,8 +223,101 @@
     DevOps, and organizational growth.
   </p>
 
+  <!-- Main skills (icon boxes) -->
+  <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+    <!-- Box 1 -->
+    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-sky-500/5 via-transparent to-transparent"></div>
+      <div class="flex items-center gap-3">
+        <!-- Icon: Architecture -->
+        <svg width="28" height="28" viewBox="0 0 24 24" class="text-sky-600 dark:text-sky-400">
+          <path fill="currentColor" d="M3 13h8V3H3zm10 8h8V3h-8zm-10 0h8v-6H3z"/>
+        </svg>
+        <h3 class="font-semibold">Platforms & Architecture</h3>
+      </div>
+      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+        Microservices, event-driven design, DDD, APIs, integration patterns, scalability & performance.
+      </p>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-emerald-500/5 via-transparent to-transparent"></div>
+      <div class="flex items-center gap-3">
+        <!-- Icon: Data -->
+        <svg width="28" height="28" viewBox="0 0 24 24" class="text-emerald-600 dark:text-emerald-400">
+          <path fill="currentColor" d="M12 3c-4.97 0-9 1.79-9 4v10c0 2.21 4.03 4 9 4s9-1.79 9-4V7c0-2.21-4.03-4-9-4zM5 9c0-.66 2.69-2 7-2s7 1.34 7 2s-2.69 2-7 2s-7-1.34-7-2z"/>
+        </svg>
+        <h3 class="font-semibold">Data Engineering & Analytics</h3>
+      </div>
+      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+        BigQuery, Airflow, ELT/ETL, data contracts, governance, warehouse/lakehouse, lineage.
+      </p>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-fuchsia-500/5 via-transparent to-transparent"></div>
+      <div class="flex items-center gap-3">
+        <!-- Icon: AI -->
+        <svg width="28" height="28" viewBox="0 0 24 24" class="text-fuchsia-600 dark:text-fuchsia-400">
+          <path fill="currentColor" d="M12 2a10 10 0 1 1-7.07 2.93A10 10 0 0 1 12 2m1 5h-2v5h2zm0 6h-2v2h2z"/>
+        </svg>
+        <h3 class="font-semibold">AI & Agents</h3>
+      </div>
+      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+        Agentic AI, <span class="whitespace-nowrap">Model Context Protocol (MCP)</span>, RAG, evals, tool integrations, safety.
+      </p>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-amber-500/5 via-transparent to-transparent"></div>
+      <div class="flex items-center gap-3">
+        <!-- Icon: Cloud -->
+        <svg width="28" height="28" viewBox="0 0 24 24" class="text-amber-600 dark:text-amber-400">
+          <path fill="currentColor" d="M6 19h13a4 4 0 0 0 0-8h-.26A8 8 0 1 0 6 19"/>
+        </svg>
+        <h3 class="font-semibold">Cloud & DevOps</h3>
+      </div>
+      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+        GCP, AWS, Kubernetes, Terraform, Pulumi, Helm, CI/CD, SRE, observability, incident response.
+      </p>
+    </div>
+
+    <!-- Box 5 -->
+    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-indigo-500/5 via-transparent to-transparent"></div>
+      <div class="flex items-center gap-3">
+        <!-- Icon: Leadership -->
+        <svg width="28" height="28" viewBox="0 0 24 24" class="text-indigo-600 dark:text-indigo-400">
+          <path fill="currentColor" d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5m0 2c-4.42 0-8 2.239-8 5v1h16v-1c0-2.761-3.58-5-8-5"/>
+        </svg>
+        <h3 class="font-semibold">Leadership & Strategy</h3>
+      </div>
+      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+        Tech vision, strategic roadmapping, OKRs, stakeholder management, change leadership, delivery governance.
+      </p>
+    </div>
+
+    <!-- Box 6 -->
+    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
+      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-rose-500/5 via-transparent to-transparent"></div>
+      <div class="flex items-center gap-3">
+        <!-- Icon: Delivery -->
+        <svg width="28" height="28" viewBox="0 0 24 24" class="text-rose-600 dark:text-rose-400">
+          <path fill="currentColor" d="M3 6h18v2H3zm0 4h10v2H3zm0 4h18v2H3z"/>
+        </svg>
+        <h3 class="font-semibold">People & Delivery</h3>
+      </div>
+      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+        Cross-functional leadership, mentoring/coaching, talent acquisition, Agile/Kanban, DevEx, paved roads.
+      </p>
+    </div>
+  </div>
+
+  <!-- Detailed skills (kept from before, tuned) -->
   <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <!-- Languages -->
     <div class="card p-5">
       <h3 class="font-semibold mb-2">Languages & Frameworks</h3>
       <p class="text-sm text-slate-700 dark:text-slate-300">
@@ -191,8 +325,6 @@
         Micronaut, Spring Boot, FastAPI, Django, .NET, Unity
       </p>
     </div>
-
-    <!-- Cloud -->
     <div class="card p-5">
       <h3 class="font-semibold mb-2">Cloud & DevOps</h3>
       <p class="text-sm text-slate-700 dark:text-slate-300">
@@ -200,43 +332,32 @@
         SRE, Observability, Logging, Tracing, Incident Management
       </p>
     </div>
-
-    <!-- Data & AI -->
     <div class="card p-5">
       <h3 class="font-semibold mb-2">Data & AI</h3>
       <p class="text-sm text-slate-700 dark:text-slate-300">
         BigQuery, PostgreSQL, MySQL, MongoDB, DynamoDB, Elasticsearch, Redis, Airflow, Dataform,
-        Data Warehouse/Lakehouse, ETL/ELT Design, Data Contracts, Governance, <strong>RAG</strong>, 
-        <strong>Agentic AI</strong>, <strong>Model Context Protocol (MCP)</strong>, Vertex AI, OpenAI/Claude/Gemini, HuggingFace, Transformers, FAISS, Pinecone, Chroma
+        Warehouse/Lakehouse, Data Contracts, Governance, <strong>RAG</strong>, <strong>Agentic AI</strong>, <strong>MCP</strong>,
+        Vertex AI, OpenAI/Claude/Gemini, HF Transformers, FAISS, Pinecone, Chroma
       </p>
     </div>
-
-    <!-- Architecture & Engineering -->
     <div class="card p-5">
       <h3 class="font-semibold mb-2">Architecture & Engineering</h3>
       <p class="text-sm text-slate-700 dark:text-slate-300">
-        Microservices, Event-driven Systems, API Design, Integration Patterns, Scalable Architecture, 
-        System Design, Domain-Driven Design (DDD), Clean Architecture, Performance Optimization, Security by Design
+        System Design, DDD, Clean Architecture, Eventing, API Design, Integration Patterns, Performance, Security by Design
       </p>
     </div>
-
-    <!-- Leadership & Strategy -->
     <div class="card p-5">
       <h3 class="font-semibold mb-2">Leadership & Strategy</h3>
       <p class="text-sm text-slate-700 dark:text-slate-300">
-        Technology Vision, Strategic Roadmapping, Data & AI Platform Strategy, Digital Transformation,
-        Executive Stakeholder Management, OKR Alignment, Process Excellence, Continuous Improvement,
-        Change Management, Organizational Design
+        Technology Vision, Strategic Roadmapping, AI Platform Strategy, Digital Transformation,
+        Executive Stakeholder Communication, OKR Alignment, Change Management
       </p>
     </div>
-
-    <!-- People & Delivery -->
     <div class="card p-5">
       <h3 class="font-semibold mb-2">People & Delivery</h3>
       <p class="text-sm text-slate-700 dark:text-slate-300">
-        Cross-Functional Leadership, Mentoring & Coaching, Talent Acquisition, Remote-Team Management,
-        Agile & Lean Delivery, Scrum & Kanban, KPI & SLO Tracking, Developer Experience (DevEx),
-        Paved Roads / Golden Paths, Delivery Governance
+        Team Building, Mentoring & Coaching, Talent Acquisition, Agile & Lean Delivery, Scrum/Kanban,
+        KPI & SLO Tracking, Developer Experience (DevEx), Delivery Governance
       </p>
     </div>
   </div>
