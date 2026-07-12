@@ -3,18 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ishan Rastogi – Head of Data, Development & AI</title>
-  <meta name="description" content="Fractional CTO-level leader and freelance software engineer. I design scalable platforms, data & AI systems, and build high‑performing teams." />
+  <title>Ishan Rastogi – Technology Executive | Fractional CTO | AI & RegTech</title>
+  <meta name="description" content="Fractional CTO and technology executive. I help founders and leadership teams turn complex product, platform and regulatory challenges into scalable systems, effective engineering organizations and measurable business outcomes." />
   <meta name="author" content="Ishan Rastogi" />
-  <meta property="og:title" content="Ishan Rastogi – Fractional CTO / Head of Data, Development & AI" />
-  <meta property="og:description" content="Scalable systems, data excellence, and intelligent automation. Available for fractional leadership and hands‑on engineering." />
+  <meta property="og:title" content="Ishan Rastogi – Technology Executive | Fractional CTO | AI & RegTech" />
+  <meta property="og:description" content="I help founders and leadership teams turn complex product, platform and regulatory challenges into scalable systems, effective engineering organizations and measurable business outcomes." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/banner.jpeg" />
+  <meta property="og:url" content="https://ishanrastogi.github.io" />
+  <meta property="og:image" content="https://ishanrastogi.github.io/assets/og-banner.jpeg" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ishan Rastogi – Technology Executive | Fractional CTO | AI & RegTech" />
+  <meta name="twitter:description" content="I help founders and leadership teams turn complex product, platform and regulatory challenges into scalable systems and measurable business outcomes." />
+  <meta name="twitter:image" content="https://ishanrastogi.github.io/assets/og-banner.jpeg" />
   <meta name="theme-color" content="#0ea5e9" />
-  
+
   <!-- Tailwind (CDN) for a clean, minimal aesthetic similar to joenst.de -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style type="text/tailwindcss">
+    .signature { font-family: 'Great Vibes', cursive; }
     html { scroll-behavior: smooth; }
     :root { color-scheme: light dark; }
     body { font-feature-settings: "ss01" on, "liga" on; }
@@ -22,8 +33,8 @@
     .card { min-height: 100%; }
     .card {
     @apply relative rounded-2xl border border-slate-200/70 dark:border-slate-700/60
-           bg-white/90 dark:bg-white/10 backdrop-blur-md shadow-sm 
-           transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg 
+           bg-white/90 dark:bg-white/10 backdrop-blur-md shadow-sm
+           transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg
            hover:border-sky-300/70 dark:hover:border-sky-500/60;
   }
 
@@ -42,30 +53,58 @@
     opacity: 1;
   }
     .chip { @apply inline-flex items-center rounded-full border px-3 py-1 text-sm border-slate-200/80 dark:border-slate-700/60; }
+    .btn-primary { @apply inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold shadow-sm; }
+    .btn-ghost { @apply inline-flex items-center justify-center rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-2 font-semibold shadow-sm hover:shadow; }
   </style>
-  
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Ishan Rastogi",
-    "jobTitle": "Head of Data, Development & AI",
+    "jobTitle": "Technology Executive & Fractional CTO",
+    "description": "Fractional CTO and technology executive advising founders and leadership teams on technology strategy, architecture, AI adoption, engineering organization design and regulated-platform readiness.",
     "email": "mailto:rastogiishan90@gmail.com",
     "telephone": "+49 176 34115146",
     "url": "https://ishanrastogi.github.io",
     "sameAs": ["https://www.linkedin.com/in/rastogiishan"],
+    "worksFor": {"@type":"Organization","name":"Dado Software GmbH"},
     "address": {"@type":"PostalAddress","addressLocality":"Hamburg","addressCountry":"DE"}
   }
   </script>
 </head>
 <body class="bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100">
-  <!-- Hero / Banner -->
+  <!-- Hero / Banner + Positioning -->
 <header id="top" class="relative">
-  <img src="assets/banner.jpeg" alt="Banner"
-       class="h-48 w-full object-cover object-center sm:h-56 md:h-64 lg:h-72 z-0" />
-
-  <!-- Overlay sits under content and ignores clicks -->
-  <div class="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-black/30 via-black/20 to-transparent"></div>
+  <!-- Designed banner (replaces the old raster; positioning is live text, so it never goes stale) -->
+  <div class="relative h-36 w-full sm:h-40 md:h-44 lg:h-48 overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-sky-950">
+    <svg class="absolute inset-0 h-full w-full" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <radialGradient id="bnrGlow" cx="0.85" cy="0.12" r="0.7">
+          <stop offset="0" stop-color="#0ea5e9" stop-opacity="0.35"/>
+          <stop offset="1" stop-color="#0ea5e9" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="bnrEdge" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#0ea5e9" stop-opacity="0.20"/>
+          <stop offset="1" stop-color="#0ea5e9" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="300" fill="url(#bnrGlow)"/>
+      <polygon points="0,300 340,0 470,0 130,300" fill="#ffffff" fill-opacity="0.05"/>
+      <polygon points="180,300 560,0 660,0 280,300" fill="#0ea5e9" fill-opacity="0.12"/>
+      <polygon points="380,300 760,0 820,0 440,300" fill="#ffffff" fill-opacity="0.035"/>
+      <polygon points="820,0 1200,0 1200,300 700,300" fill="url(#bnrEdge)"/>
+    </svg>
+    <!-- Signature name (restores the branding from the original banner) -->
+    <div class="absolute top-2 right-6 md:top-3 hidden sm:block">
+      <span class="signature text-white/90 leading-none text-4xl md:text-5xl">Ishan Rastogi</span>
+    </div>
+    <!-- Positioning tagline (kept current; replaces the baked-in "ENGINEER / EDUCATOR") -->
+    <div class="absolute bottom-4 right-6 text-right hidden sm:block">
+      <p class="text-white/90 font-semibold uppercase tracking-[0.28em] text-sm md:text-base">Technology Executive</p>
+      <p class="text-sky-300/80 uppercase tracking-[0.22em] text-xs md:text-sm">Fractional CTO · RegTech</p>
+    </div>
+  </div>
 
   <!-- Content sits above overlay -->
   <div class="relative z-10 max-w-5xl mx-auto px-4 md:px-8 -mt-10 sm:-mt-12 md:-mt-16">
@@ -74,27 +113,31 @@
            class="h-28 w-28 md:h-36 md:w-36 rounded-2xl ring-4 ring-white dark:ring-slate-900 object-cover" />
       <div class="pb-1">
         <h1 class="text-2xl md:text-4xl font-extrabold tracking-tight">Ishan Rastogi</h1>
-        <p class="text-sky-600 dark:text-sky-400 font-semibold">Head of Data, Development & AI</p>
-        <p class="text-sm md:text-base text-slate-600 dark:text-slate-300">
-          Driving scalable systems, data excellence, and intelligent automation.
+        <p class="text-sky-600 dark:text-sky-400 font-semibold">
+          Technology Executive | AI, RegTech &amp; Platform Strategy | Engineering Leadership
         </p>
+      </div>
+    </div>
 
-        <div class="mt-3 flex flex-wrap gap-2 text-sm text-slate-600 dark:text-slate-300">
-          <span class="chip">Hamburg, Germany · Remote</span>
-          <span class="chip">Fractional CTO • Engineering Leadership</span>
-          <span class="chip">Agentic AI • MCP • RAG</span>
-        </div>
+    <div class="mt-5 max-w-3xl">
+      <p class="text-base md:text-lg text-slate-700 dark:text-slate-200">
+        I help founders and leadership teams turn complex product, platform and regulatory challenges
+        into scalable systems, effective engineering organizations and measurable business outcomes.
+      </p>
 
-        <div class="mt-4 flex flex-wrap gap-3">
-          <a href="#contact"
-             class="inline-flex items-center justify-center rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-2 font-semibold shadow-sm hover:shadow">Let’s talk</a>
-          <a href="assets/IshanRastogi.pdf"
-             class="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold shadow-sm">Download CV</a>
-          <a href="https://www.linkedin.com/in/rastogiishan" target="_blank" rel="noreferrer"
-             class="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold shadow-sm">LinkedIn</a>
-          <a href="mailto:rastogiishan90@gmail.com" 
-            class="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold shadow-sm">Email</a>
-        </div>
+      <div class="mt-4 flex flex-wrap gap-2 text-sm text-slate-600 dark:text-slate-300">
+        <span class="chip">Hamburg, Germany</span>
+        <span class="chip">Remote across Europe</span>
+        <span class="chip">Fractional CTO</span>
+        <span class="chip">Technology Strategy</span>
+        <span class="chip">AI &amp; Regulated Platforms</span>
+      </div>
+
+      <div class="mt-5 flex flex-wrap gap-3">
+        <a href="#contact" class="btn-primary">Book a conversation</a>
+        <a href="#experience" class="btn-ghost">View executive profile</a>
+        <a href="https://www.linkedin.com/in/rastogiishan" target="_blank" rel="noreferrer" class="btn-ghost">LinkedIn</a>
+        <a href="assets/IshanRastogi.pdf" class="btn-ghost">Download CV</a>
       </div>
     </div>
   </div>
@@ -102,253 +145,246 @@
 
   <!-- Sections -->
   <main class="max-w-5xl mx-auto px-4 md:px-8">
-    <!-- Services / Value -->
-    <!-- Services / Value -->
-<section id="services" class="py-12 md:py-16">
-  <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">What I do</h2>
-  <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">
-    Fractional CTO-level leadership + hands-on engineering — platform & data architecture, AI enablement, and delivery excellence.
-  </p>
 
-  <!-- Frosted container for the cards -->
-<div class="mt-6 bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm p-4 rounded-2xl">
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
-    <!-- Card 1 -->
-    <div class="card p-6 relative overflow-hidden flex flex-col md:min-h-[220px]">
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-sky-500/5 via-transparent to-transparent"></div>
-      <div class="flex items-center gap-3">
-        <!-- Icon: Leadership -->
-        <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0 text-sky-600 dark:text-sky-400">
-          <path fill="currentColor" d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5m0 2c-4.42 0-8 2.239-8 5v1h16v-1c0-2.761-3.58-5-8-5"/>
-        </svg>
-        <h3 class="font-semibold">Interim / Fractional Leadership</h3>
-      </div>
-      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-        Strategy → execution, org design, hiring, OKRs, delivery governance, DevEx at scale, SRE & observability.
+    <!-- 2. How I help -->
+    <section id="help" class="py-12 md:py-16">
+      <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">How I help</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">
+        Three ways founders and leadership teams engage me — from setting technical direction to
+        running the engineering organization to making platforms enterprise- and regulation-ready.
       </p>
-      <div class="mt-auto pt-4 text-xs text-slate-500">Outcome-first · “Strategy that ships.”</div>
-    </div>
 
-    <!-- Card 2 -->
-    <div class="card p-6 relative overflow-hidden flex flex-col md:min-h-[220px]">
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-emerald-500/5 via-transparent to-transparent"></div>
-      <div class="flex items-center gap-3">
-        <!-- Icon: Platforms -->
-        <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0 text-emerald-600 dark:text-emerald-400">
-          <path fill="currentColor" d="M3 7h18v2H3zm0 4h12v2H3zm0 4h18v2H3z"/>
-        </svg>
-        <h3 class="font-semibold">Platforms, Data & Cloud</h3>
-      </div>
-      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-        Event-driven services, data products, lake/warehouse, contracts, governance, performance & security by design.
-      </p>
-      <div class="mt-auto pt-4 text-xs text-slate-500">Kotlin · Node · React · GCP/AWS · K8s · Terraform</div>
-    </div>
+      <div class="mt-6 bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm p-4 rounded-2xl">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+          <!-- Offer 1 -->
+          <div class="card p-6 relative overflow-hidden flex flex-col">
+            <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-sky-500/5 via-transparent to-transparent"></div>
+            <div class="flex items-center gap-3">
+              <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0 text-sky-600 dark:text-sky-400">
+                <path fill="currentColor" d="M3 13h8V3H3zm10 8h8V3h-8zm-10 0h8v-6H3z"/>
+              </svg>
+              <h3 class="font-semibold">Technology Strategy &amp; Architecture</h3>
+            </div>
+            <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">For companies moving from MVP to scalable product.</p>
+            <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
+              <li>Target architecture and technical roadmap</li>
+              <li>Platform modernization</li>
+              <li>Architecture and risk reviews</li>
+              <li>Build-versus-buy decisions</li>
+              <li>Technical investment priorities</li>
+            </ul>
+          </div>
 
-    <!-- Card 3 -->
-    <div class="card p-6 relative overflow-hidden flex flex-col md:min-h-[220px]">
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-fuchsia-500/5 via-transparent to-transparent"></div>
-      <div class="flex items-center gap-3">
-        <!-- Icon: AI -->
-        <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0 text-fuchsia-600 dark:text-fuchsia-400">
-          <path fill="currentColor" d="M12 2a10 10 0 1 1-7.07 2.93A10 10 0 0 1 12 2m1 5h-2v5h2zm0 6h-2v2h2z"/>
-        </svg>
-        <h3 class="font-semibold">AI Enablement</h3>
-      </div>
-      <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
-        Agentic AI, <span class="whitespace-nowrap">Model Context Protocol (MCP)</span>, RAG pipelines, tool integrations, evals & safety.
-      </p>
-      <div class="mt-auto pt-4 text-xs text-slate-500">Vertex/Gemini · OpenAI/Claude · HF · Vector DBs</div>
-    </div>
-  </div>
-</div>
-</section>
+          <!-- Offer 2 -->
+          <div class="card p-6 relative overflow-hidden flex flex-col">
+            <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-indigo-500/5 via-transparent to-transparent"></div>
+            <div class="flex items-center gap-3">
+              <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0 text-indigo-600 dark:text-indigo-400">
+                <path fill="currentColor" d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5m0 2c-4.42 0-8 2.239-8 5v1h16v-1c0-2.761-3.58-5-8-5"/>
+              </svg>
+              <h3 class="font-semibold">Fractional Technology Leadership</h3>
+            </div>
+            <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">For founders who need senior technical leadership without a full-time CTO.</p>
+            <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
+              <li>Engineering operating model</li>
+              <li>Delivery governance and reporting</li>
+              <li>Team design, hiring and mentoring</li>
+              <li>Product–engineering alignment</li>
+              <li>Executive and client communication</li>
+            </ul>
+          </div>
 
-    <!-- Experience -->
-    <section id="experience" class="py-12 md:py-16">
-      <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Selected Professional Experience</h2>
-      <div class="mt-6 space-y-4">
-        <article class="card p-5">
-          <header class="flex items-center justify-between gap-3 flex-wrap">
-            <h3 class="font-semibold">Head of Development, Data & AI – Emnos GmbH</h3>
-            <span class="text-xs text-slate-500">07/2023 – Present · Munich / Remote</span>
-          </header>
-          <ul class="mt-2 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
-            <li>Led multi‑track engineering (backend, data, AI), standardized CI/CD; releases +40%, incidents −30%.</li>
-            <li>Introduced RAG and <strong>agentic AI</strong> workflows; analytics turnaround −50%.</li>
-            <li>MCP‑based orchestration to connect enterprise APIs & tools to PrivateGPT/LLMs.</li>
-          </ul>
-          <p class="mt-2 text-xs text-slate-500">Kotlin · Node · React · GCP (BigQuery/Spark) · Airflow · Terraform · PostgreSQL · Firebase · Gemini/HF</p>
-        </article>
-
-        <article class="card p-5">
-          <header class="flex items-center justify-between gap-3 flex-wrap">
-            <h3 class="font-semibold">Head of Engineering – MyFlo Ltd</h3>
-            <span class="text-xs text-slate-500">06/2014 – 01/2017 · London / Cardiff</span>
-          </header>
-          <ul class="mt-2 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
-            <li>Scaled org from 2 → 21; introduced agile practices and CI/CD across multiple client products.</li>
-            <li>Delivery lead time −50%; set coding standards, reviews, and release governance.</li>
-          </ul>
-        </article>
-
-        <article class="card p-5">
-          <header class="flex items-center justify-between gap-3 flex-wrap">
-            <h3 class="font-semibold">Senior Software Engineer – Fielmann AG</h3>
-            <span class="text-xs text-slate-500">06/2021 – 06/2023 · Hamburg</span>
-          </header>
-          <ul class="mt-2 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
-            <li>Designed a central <strong>single source of truth</strong> platform for multi‑channel operations (900+ stores).</li>
-            <li>Unified APIs & schemas enabling downstream teams to ship faster and more reliably.</li>
-          </ul>
-        </article>
-
-        <article class="card p-5">
-          <header class="flex items-center justify-between gap-3 flex-wrap">
-            <h3 class="font-semibold">Senior Software Engineer – InnoGames GmbH</h3>
-            <span class="text-xs text-slate-500">11/2019 – 05/2021 · Hamburg</span>
-          </header>
-          <ul class="mt-2 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
-            <li>Modernized a top web/mobile game (5M+ players): downtime −25%, deployment cadence +20%.</li>
-            <li>Introduced automated testing and build pipelines; release issues −40%.</li>
-          </ul>
-        </article>
-
-        <article class="card p-5">
-          <header class="flex items-center justify-between gap-3 flex-wrap">
-            <h3 class="font-semibold">Senior Software Engineer – Dept</h3>
-            <span class="text-xs text-slate-500">06/2018 – 10/2019 · Hamburg</span>
-          </header>
-          <ul class="mt-2 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
-            <li>Delivered enterprise B2B/B2C platforms; supported recruiting, onboarding, and mentoring.</li>
-          </ul>
-        </article>
-
-        <article class="card p-5">
-          <header class="flex items-center justify-between gap-3 flex-wrap">
-            <h3 class="font-semibold">Education Mentor – W3Schools & Masterschool</h3>
-            <span class="text-xs text-slate-500">01/2022 – Present · Remote</span>
-          </header>
-          <ul class="mt-2 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
-            <li>Mentored 800+ learners in web-dev, data engineering, security, AI, and full‑stack (EN/DE).</li>
-            <li>Project‑based tracks and interview coaching; placement uplift +37%.</li>
-          </ul>
-        </article>
+          <!-- Offer 3 -->
+          <div class="card p-6 relative overflow-hidden flex flex-col">
+            <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-fuchsia-500/5 via-transparent to-transparent"></div>
+            <div class="flex items-center gap-3">
+              <svg width="28" height="28" viewBox="0 0 24 24" class="shrink-0 text-fuchsia-600 dark:text-fuchsia-400">
+                <path fill="currentColor" d="M12 2a10 10 0 1 1-7.07 2.93A10 10 0 0 1 12 2m1 5h-2v5h2zm0 6h-2v2h2z"/>
+              </svg>
+              <h3 class="font-semibold">AI &amp; Regulated Platform Readiness</h3>
+            </div>
+            <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">For businesses introducing AI or operating in high-trust environments.</p>
+            <ul class="mt-3 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300">
+              <li>AI adoption and governance</li>
+              <li>Authorization and policy enforcement</li>
+              <li>Auditability and traceability</li>
+              <li>Enterprise-readiness assessments</li>
+              <li>Secure, compliant platform design</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-   <!-- Skills -->
-<!-- Skills -->
-<section id="skills" class="py-12 md:py-16">
-  <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Skills & Expertise</h2>
-  <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">
-    A blend of hands-on technical mastery and strategic leadership — spanning backend engineering, data systems, AI enablement,
-    DevOps, and organizational growth.
-  </p>
-
-  <!-- Main skills (icon boxes) -->
-  <!-- Frosted container for the cards -->
-<div class="mt-6 bg-white/40 dark:bg-slate-800/40 backdrop-blur-sm p-4 rounded-2xl">
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
-    <!-- Box 1 -->
-    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-sky-500/5 via-transparent to-transparent"></div>
-      <div class="flex items-center gap-3">
-        <!-- Icon: Architecture -->
-        <svg width="28" height="28" viewBox="0 0 24 24" class="text-sky-600 dark:text-sky-400">
-          <path fill="currentColor" d="M3 13h8V3H3zm10 8h8V3h-8zm-10 0h8v-6H3z"/>
-        </svg>
-        <h3 class="font-semibold">Platforms & Architecture</h3>
-      </div>
-      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
-        Microservices, event-driven design, DDD, APIs, integration patterns, scalability & performance.
+    <!-- 3. Selected outcomes -->
+    <section id="outcomes" class="py-12 md:py-16">
+      <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Selected outcomes</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300 max-w-3xl">
+        Evidence from leading engineering organizations and platforms at scale.
       </p>
-    </div>
 
-    <!-- Box 2 -->
-    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-emerald-500/5 via-transparent to-transparent"></div>
-      <div class="flex items-center gap-3">
-        <!-- Icon: Data -->
-        <svg width="28" height="28" viewBox="0 0 24 24" class="text-emerald-600 dark:text-emerald-400">
-          <path fill="currentColor" d="M12 3c-4.97 0-9 1.79-9 4v10c0 2.21 4.03 4 9 4s9-1.79 9-4V7c0-2.21-4.03-4-9-4zM5 9c0-.66 2.69-2 7-2s7 1.34 7 2s-2.69 2-7 2s-7-1.34-7-2z"/>
-        </svg>
-        <h3 class="font-semibold">Data Engineering & Analytics</h3>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div class="card p-5 flex flex-col justify-center text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-sky-600 dark:text-sky-400">2 → 21</div>
+          <div class="mt-1 text-sm text-slate-600 dark:text-slate-300">Engineering org scaled</div>
+        </div>
+        <div class="card p-5 flex flex-col justify-center text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-sky-600 dark:text-sky-400">+40%</div>
+          <div class="mt-1 text-sm text-slate-600 dark:text-slate-300">Release velocity</div>
+        </div>
+        <div class="card p-5 flex flex-col justify-center text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-sky-600 dark:text-sky-400">−30%</div>
+          <div class="mt-1 text-sm text-slate-600 dark:text-slate-300">Operational incidents</div>
+        </div>
+        <div class="card p-5 flex flex-col justify-center text-center">
+          <div class="text-2xl md:text-3xl font-extrabold text-sky-600 dark:text-sky-400">200%+</div>
+          <div class="mt-1 text-sm text-slate-600 dark:text-slate-300">AI workflow productivity</div>
+        </div>
+        <div class="card p-5 flex flex-col justify-center text-center col-span-2 md:col-span-1">
+          <div class="text-2xl md:text-3xl font-extrabold text-sky-600 dark:text-sky-400">Millions</div>
+          <div class="mt-1 text-sm text-slate-600 dark:text-slate-300">Users served · 900+ locations</div>
+        </div>
       </div>
-      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
-        BigQuery, Airflow, ELT/ETL, data contracts, governance, warehouse/lakehouse, lineage.
-      </p>
-    </div>
+    </section>
 
-    <!-- Box 3 -->
-    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-fuchsia-500/5 via-transparent to-transparent"></div>
-      <div class="flex items-center gap-3">
-        <!-- Icon: AI -->
-        <svg width="28" height="28" viewBox="0 0 24 24" class="text-fuchsia-600 dark:text-fuchsia-400">
-          <path fill="currentColor" d="M12 2a10 10 0 1 1-7.07 2.93A10 10 0 0 1 12 2m1 5h-2v5h2zm0 6h-2v2h2z"/>
-        </svg>
-        <h3 class="font-semibold">AI & Agents</h3>
+    <!-- 4. Founder / Aim Higher -->
+    <section id="founder" class="py-12 md:py-16">
+      <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Founder perspective</h2>
+      <div class="mt-6 card p-6 md:p-8 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-emerald-500/8 via-transparent to-transparent"></div>
+        <div class="flex items-center gap-2">
+          <span class="chip border-emerald-300/70 dark:border-emerald-500/50 text-emerald-700 dark:text-emerald-300">RegTech</span>
+          <h3 class="font-semibold text-lg">Co-Founder, Aim Higher Innovations Ltd</h3>
+        </div>
+        <p class="mt-3 text-slate-700 dark:text-slate-300 max-w-3xl">
+          Building a RegTech platform focused on trusted decision-making, policy-driven controls,
+          auditability and compliance-aware automation.
+        </p>
+        <ul class="mt-4 text-sm list-disc pl-5 space-y-1 text-slate-700 dark:text-slate-300 max-w-3xl">
+          <li>Define product vision, technology strategy and platform architecture</li>
+          <li>Translate regulatory and operational requirements into scalable product capabilities</li>
+          <li>Lead the design of secure, auditable and policy-aware decision systems</li>
+        </ul>
       </div>
-      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
-        Agentic AI, <span class="whitespace-nowrap">Model Context Protocol (MCP)</span>, RAG, evals, tool integrations, safety.
-      </p>
-    </div>
+    </section>
 
-    <!-- Box 4 -->
-    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-amber-500/5 via-transparent to-transparent"></div>
-      <div class="flex items-center gap-3">
-        <!-- Icon: Cloud -->
-        <svg width="28" height="28" viewBox="0 0 24 24" class="text-amber-600 dark:text-amber-400">
-          <path fill="currentColor" d="M6 19h13a4 4 0 0 0 0-8h-.26A8 8 0 1 0 6 19"/>
-        </svg>
-        <h3 class="font-semibold">Cloud & DevOps</h3>
+    <!-- 5. Selected leadership experience -->
+    <section id="experience" class="py-12 md:py-16">
+      <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Selected leadership experience</h2>
+      <div class="mt-6 space-y-4">
+        <article class="card p-5">
+          <h3 class="font-semibold">Head of Engineering — Dado Software GmbH</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            Lead globally distributed engineering, platform modernization and AI-enabled delivery across
+            Europe, Asia and the US.
+          </p>
+        </article>
+
+        <article class="card p-5">
+          <h3 class="font-semibold">Head of Engineering, Data &amp; AI — Emnos GmbH</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            Led 20+ software and data engineers; increased release velocity by 40%, reduced incidents by 30%,
+            and introduced RAG and AI validation systems.
+          </p>
+        </article>
+
+        <article class="card p-5">
+          <h3 class="font-semibold">Fractional CTO — Precision Labs</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            Advise founders and clients on architecture, delivery governance, technical hiring and the
+            transition from MVP to scalable production systems.
+          </p>
+        </article>
+
+        <article class="card p-5">
+          <h3 class="font-semibold">Co-Founder — Aim Higher Innovations Ltd</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            Lead technology strategy and platform design for an AI-enabled RegTech engine focused on trusted
+            and auditable decision-making in regulated industries.
+          </p>
+        </article>
       </div>
-      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
-        GCP, AWS, Kubernetes, Terraform, Pulumi, Helm, CI/CD, SRE, observability, incident response.
-      </p>
-    </div>
 
-    <!-- Box 5 -->
-    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-indigo-500/5 via-transparent to-transparent"></div>
-      <div class="flex items-center gap-3">
-        <!-- Icon: Leadership -->
-        <svg width="28" height="28" viewBox="0 0 24 24" class="text-indigo-600 dark:text-indigo-400">
-          <path fill="currentColor" d="M12 12a5 5 0 1 0-5-5a5 5 0 0 0 5 5m0 2c-4.42 0-8 2.239-8 5v1h16v-1c0-2.761-3.58-5-8-5"/>
-        </svg>
-        <h3 class="font-semibold">Leadership & Strategy</h3>
+      <p class="mt-4 text-sm text-slate-500 dark:text-slate-400 max-w-3xl">
+        Earlier experience includes building an engineering organization from 2 to 21 people, leading
+        large-scale platforms across retail, gaming and enterprise systems, and fractional CTO and
+        mentoring engagements.
+      </p>
+    </section>
+
+    <!-- 6. Ways to work together -->
+    <section id="engagement" class="py-12 md:py-16">
+      <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Ways to work together</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
+        <div class="card p-6 flex flex-col">
+          <h3 class="font-semibold">Strategy Sprint</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            A focused 2–3 week engagement to assess architecture, delivery risk, team structure and roadmap.
+          </p>
+        </div>
+        <div class="card p-6 flex flex-col">
+          <h3 class="font-semibold">Fractional CTO</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            Ongoing leadership for 1–2 days per week across strategy, architecture, hiring and delivery.
+          </p>
+        </div>
+        <div class="card p-6 flex flex-col">
+          <h3 class="font-semibold">Executive Advisory</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            Regular support for founders, CTOs and boards on technology decisions, AI adoption and platform risk.
+          </p>
+        </div>
+        <div class="card p-6 flex flex-col">
+          <h3 class="font-semibold">Interim Technology Leadership</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            Short-term leadership during transition, growth, restructuring or CTO recruitment.
+          </p>
+        </div>
       </div>
-      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
-        Tech vision, strategic roadmapping, OKRs, stakeholder management, change leadership, delivery governance.
-      </p>
-    </div>
+    </section>
 
-    <!-- Box 6 -->
-    <div class="relative overflow-hidden card p-6 flex flex-col md:min-h-[180px]">
-      <div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-rose-500/5 via-transparent to-transparent"></div>
-      <div class="flex items-center gap-3">
-        <!-- Icon: Delivery -->
-        <svg width="28" height="28" viewBox="0 0 24 24" class="text-rose-600 dark:text-rose-400">
-          <path fill="currentColor" d="M3 6h18v2H3zm0 4h10v2H3zm0 4h18v2H3z"/>
-        </svg>
-        <h3 class="font-semibold">People & Delivery</h3>
+    <!-- 7. Core expertise -->
+    <section id="expertise" class="py-12 md:py-16">
+      <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Core expertise</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-700/60 p-5">
+          <h3 class="text-sm font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-wide">Leadership</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            Technology strategy, fractional CTO advisory, engineering organization design, hiring and delivery governance.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-700/60 p-5">
+          <h3 class="text-sm font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-wide">Platforms</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            Cloud-native architecture, data platforms, enterprise integration, modernization and operational reliability.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-700/60 p-5">
+          <h3 class="text-sm font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-wide">AI &amp; RegTech</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            RAG, agentic workflows, AI governance, authorization, auditability and trusted decision systems.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-slate-200/70 dark:border-slate-700/60 p-5">
+          <h3 class="text-sm font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-wide">Technology</h3>
+          <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+            GCP, AWS, Kotlin, Java, Python, Node.js, React, PostgreSQL and BigQuery.
+          </p>
+        </div>
       </div>
-      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
-        Cross-functional leadership, mentoring/coaching, talent acquisition, Agile/Kanban, DevEx, paved roads.
-      </p>
-    </div>
-  </div>
-  </div>
-</section>
+    </section>
 
-    <!-- Contact -->
+    <!-- 8. Call to action / Contact -->
     <section id="contact" class="py-12 md:py-16">
       <div class="card p-6 md:p-8">
-        <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Let’s work together</h2>
-        <p class="mt-2 text-slate-600 dark:text-slate-300">I’m available for fractional leadership and selected hands-on engagements. Short discovery call first; then scope, roadmap, and measurable outcomes. Drop me a quick message below and I’ll get back to you personally.</p>
-        
+        <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">
+          Building, modernizing or preparing a technology platform for its next stage?
+        </h2>
+        <p class="mt-3 text-slate-600 dark:text-slate-300 max-w-3xl">
+          I work with founders and leadership teams on technology strategy, architecture, AI adoption,
+          engineering organization design and regulated-platform readiness.
+        </p>
+
         <form
           action="https://formspree.io/f/meorpoyw"
           method="POST"
@@ -372,14 +408,15 @@
               class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-800 px-3 py-2 text-sm focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"></textarea>
           </div>
 
-          <button
-            type="submit"
-            class="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 font-semibold shadow-sm"
-          >
-            Send message
-          </button>
+          <button type="submit" class="btn-primary">Discuss your next technology challenge</button>
         </form>
 
+        <p class="mt-4 text-sm text-slate-500 dark:text-slate-400">
+          Prefer the details first?
+          <a href="assets/IshanRastogi.pdf" class="underline hover:text-sky-600 dark:hover:text-sky-400">Download CV</a>
+          ·
+          <a href="mailto:rastogiishan90@gmail.com" class="underline hover:text-sky-600 dark:hover:text-sky-400">Email directly</a>
+        </p>
       </div>
     </section>
   </main>
